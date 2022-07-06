@@ -1,11 +1,16 @@
 import React from 'react';
+import style from './SearchBar.module.css';
+import { BiSearchAlt, BiBuildingHouse } from "react-icons/bi"
 
 export default function SearchBar({onSearch}) {
   // acá va tu código
   return (
-    <div>
-      <input type="text" />
-      <button onClick={() => onSearch('Agregando ciudad...')}>Agregar</button>
+    <div className={style.searchBar}>
+      <BiBuildingHouse className={style.icon}/>
+      <input className={style.input} placeholder="Ciudad..." />
+      <button className={style.submit} type="submit">
+        <BiSearchAlt />
+      </button>
     </div>
   )
 };

@@ -1,0 +1,27 @@
+.fondo{
+    background-image: url("https://images.unsplash.com/photo-1609155627149-8c6b32d4e222?ixlib=rb-1.2.1&dl=sniff-outdoors-vfWAYeKye58-unsplash.jpg&q=80&fm=jpg&crop=entropy&cs=tinysrgb") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mainCity {
+    backdrop-filter: blur(8px);
+}
+
+.fondo,
+.mainCity {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.mainCity,
+.reelCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
